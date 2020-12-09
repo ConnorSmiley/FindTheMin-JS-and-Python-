@@ -3,6 +3,78 @@ arr = [0, 40, 6, 7, 36, 31, 78, 12, 10, 48, 55, 69, 62, 54, 34, 51, 73, 21, 6, 8
 
 
 
+//Method 1
+// function arrayMin(arr) {
+//     return arr.reduce(function (p, v) {
+//         return ( p > v ? p : v );
+//     });
+// }
+//
+// console.log(arrayMin(arr))
+
+
+
+
+//Method 2
+// function arrayMin(arr) {
+//     var len = arr.length, min = Infinity;
+//     while (len--) {
+//         if (arr[len] < min) {
+//             min = arr[len];
+//         }
+//     }
+//     return min;
+// };
+
+
+//Method 3
+// function arrayMin(arr) {
+//     var len = arr.length, min = Infinity;
+//     while (len--) {
+//         if (arr[len] > min) {
+//             min = arr[len];
+//         }
+//     }
+//     return min;
+// };
+// console.log(arrayMin(arr))
+
+// arr.sort(function (a, b) {
+//     return a.Cost - b.Cost
+// })
+//
+// var min = arr[0],
+//     max = arr[arr.length - 1]
+//
+// console.log(max)
+
+
+//Method 4
+// function min(input) {
+//     if (toString.call(input) !== "[object Array]")
+//         return false;
+//     return Math.min.apply(null, input);
+// }
+// console.log(min(arr))
+
+
+//Method 5
+// var maxValue = Math.min.apply(null, arr);
+// console.log(maxValue);
+
+//Method 6
+// i = Math.max(...arr);
+// console.log(i);
+
+function min() {
+    let i = 0;
+    for (let i = 0; i < arr.length; i++) {
+        i += arr[i];
+    }
+    return i;
+}
+
+console.log(min(arr))
 
 
 
@@ -34,19 +106,3 @@ arr = [0, 40, 6, 7, 36, 31, 78, 12, 10, 48, 55, 69, 62, 54, 34, 51, 73, 21, 6, 8
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
