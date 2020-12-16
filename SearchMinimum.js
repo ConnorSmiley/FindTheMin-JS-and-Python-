@@ -53,17 +53,15 @@ arrayy = [9]
 
 
 // Function Search the Min
-function min(array, selector) {
-  let placeholder = array[0];   // variable to hold the current max/min value.
-  for (var i = 1; i < array.length; i++) {
-      if (array[i] < placeholder) {
-        placeholder = array[i];
+function min(arr) {
+  let placeholder = arr[0];   // variable to hold the current max/min value.
+  for (var i = 1; i < arr.length; i++) {
+      if (arr[i] < placeholder) {
+        placeholder = arr[i];
     } else {
       break;
       }
-     
-  }
-  return placeholder;
+  }return placeholder;
 }
 console.log(min(arrayy))
 
